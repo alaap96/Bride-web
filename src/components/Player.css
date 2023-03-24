@@ -1,26 +1,45 @@
-.player-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #000;
-    font-size: 14px;
-  }
-  
-  .player-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .card {
-    display: inline-block;
-    background-color: #fff;
-    padding: 2px 5px;
-    margin: 0 2px;
-    border-radius: 3px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  height: 180px;
+}
+
+.player-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  margin-bottom: 5px;
+}
+
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #fff;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.player-score {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.player-name {
+  font-size: 16px;
+}

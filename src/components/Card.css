@@ -1,0 +1,37 @@
+.card {
+    width: 30px; /* Decrease the width */
+    height: 45px; /* Decrease the height */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px; /* Adjust border-radius */
+    padding: 2px; /* Adjust padding */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); /* Adjust box-shadow */
+    position: relative;
+    margin: 0 2px; /* Add some margin between cards */
+  }
+  
+  .card-value,
+  .card-suit {
+    position: absolute;
+  }
+  
+  .card-value {
+    top: 2px; /* Adjust the position */
+    left: 2px; /* Adjust the position */
+    font-size: 10px; /* Adjust font-size */
+  }
+  
+  .card-suit {
+    bottom: 2px; /* Adjust the position */
+    right: 2px; /* Adjust the position */
+    font-size: 20px; /* Adjust font-size */
+  }
+
+  .red {
+    color: red;
+  }
+  
+  .black {
+    color: black;
+  }
+  

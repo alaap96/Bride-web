@@ -1,19 +1,17 @@
 import React from 'react';
+import Card from './Card';
 import './Player.css';
 
-const Player = ({ name, cards, className }) => {
+const Player = ({ name, cards, score, className }) => {
   return (
-    <div className={className}>
-      <div className="player-info">
-        <span>{name}</span>
-      </div>
+    <div className={`player ${className}`}>
       <div className="player-cards">
         {cards.map((card, index) => (
-          <span key={index} className={`card card-${index}`}>
-            {card}
-          </span>
+          <Card key={index} suit={card.suit} value={card.value} />
         ))}
       </div>
+      <div className="player-score">Score: {score}</div>
+      <div className="player-name">{name}</div>
     </div>
   );
 };

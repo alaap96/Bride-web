@@ -1,62 +1,124 @@
 .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .table-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .table {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #228b22;
-    position: relative;
-  }
-  
-  .player {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #000;
-    font-size: 14px;
-  }
-  
-  .player-0 {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .player-1 {
-    top: 50%;
-    left: 90%;
-    transform: translateY(-50%);
-  }
-  
-  .player-2 {
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
-  
-  .player-3 {
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #228b22;
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: lightblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.player-name {
+  margin-top: 10px;
+}
+
+.player-score {
+  margin-top: 10px;
+}
+
+.player-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-0 {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.player-1 {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player-2 {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.player-3 {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player-4 {
+  top: 20%;
+  left: 20%;
+}
+
+.player-5 {
+  top: 20%;
+  right: 20%;
+}
+
+.player-6 {
+  bottom: 20%;
+  right: 20%;
+}
+
+.player-7 {
+  bottom: 20%;
+  left: 20%;
+}
+
+.team-scores {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
