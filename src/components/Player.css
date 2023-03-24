@@ -1,0 +1,26 @@
+.player-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .player-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card {
+    display: inline-block;
+    background-color: #fff;
+    padding: 2px 5px;
+    margin: 0 2px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
