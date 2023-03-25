@@ -1,13 +1,13 @@
 .card {
-    width: 30px; /* Decrease the width */
-    height: 45px; /* Decrease the height */
+    width: 30px; /* Add the width */
+    height: 45px; /* Add the height */
     background-color: white;
     border: 1px solid black;
-    border-radius: 3px; /* Adjust border-radius */
-    padding: 2px; /* Adjust padding */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); /* Adjust box-shadow */
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     position: relative;
-    margin: 0 2px; /* Add some margin between cards */
+    margin: 1px;
   }
   
   .card-value,

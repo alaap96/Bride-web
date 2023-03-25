@@ -12,11 +12,10 @@
 
 .player-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2px;
   margin-bottom: 5px;
 }
-
 
 .card-row {
   display: flex;
@@ -43,3 +42,16 @@
 .player-name {
   font-size: 16px;
 }
+
+.active-player {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.player-card-container {
+  width: 30px;
+  height: 45px;
+  margin: 2px;
+}
+
+

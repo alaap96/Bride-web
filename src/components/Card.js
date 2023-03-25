@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ suit, value }) => {
+const Card = ({ suit, value, onClick }) => {
   const getSuitSymbol = () => {
     switch (suit) {
       case 'hearts':
@@ -25,7 +25,7 @@ const Card = ({ suit, value }) => {
   };
 
   return (
-    <div className={`card ${suit}`}>
+    <div className={`card ${suit} ${value}`} onClick={onClick}>
       <div className={`card-value ${getColor()}`}>{value}</div>
       <div className={`card-suit ${getColor()}`}>{getSuitSymbol()}</div>
     </div>
